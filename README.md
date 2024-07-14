@@ -87,6 +87,6 @@ Gets the rendered output as a JSON string.
 ![alt text](img01.png)
 ![alt text](img02.png)
 
-## Why I want to use this?
+## Why you want to use this?
 
 If you’re looking for a CDN link for FrontMatter Markdown (often used in static site generators and documentation systems), it typically allows you to easily include FrontMatter parsing functionality in your project without needing to host the library yourself. This can streamline the setup process and ensure that you’re using a reliable version.
