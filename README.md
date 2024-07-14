@@ -13,8 +13,6 @@ To use the `MarkdownParser` class, include the following scripts in your HTML fi
 <script src="http://cdn.jsdelivr.net/gh/ksdeshappriya/FrontMatter-Plugin/frontMatter-plugin.js"></script>
 ```
 
-Replace `https://example.com/js/markdown-parser.js` with the actual URL where `markdown-parser.js` is hosted.
-
 ## Usage
 
 ### Example
