@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Markdown-It Front Matter Plugin</title>
+  <script src="https://cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js"></script>
+  <script src="frontMatter-plugin.js"></script>
+</head>
+
+<body>
+  <!-- <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var md = window.markdownit();
+      md.use(window.markdownitFrontMatterPlugin, function(fm) {
+        console.log('Front matter:', fm);
+      });
+
+      var src = `---
+title: Hello World
+---
+
+# This is a heading
+
+This is some text.
+`;
+
+      var result = md.render(src);
+      console.log(result);
+    });
+  </script> -->
+
+  <script>
+    // Example usage:
+    document.addEventListener("DOMContentLoaded", function () {
+      const parser = new MarkdownParser();
+      const src = `---
+title: TITLE
+date: 2024-07-14 12:00:00 +0000
+categories: [TOP_CATEGORY, SUB_CATEGORY]
+tags: [tag1, tag2]
+---
+# Heading
+some text`;
+
+      const output = parser.getOutputAsJson(src);
+      console.log(output);
+      document.write(`<pre>`+output+`</pre>`);
+    });
+  </script>
+</body>
+
+</html>
