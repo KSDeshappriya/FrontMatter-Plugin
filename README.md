@@ -10,7 +10,7 @@ To use the `FrontMatter` class, include the following scripts in your HTML file:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js"></script>
-<script src="http://cdn.jsdelivr.net/gh/ksdeshappriya/FrontMatter-Plugin/frontMatter-plugin.js"></script>
+<script src="http://cdn.jsdelivr.net/gh/ksdeshappriya/FrontMatter-Plugin/frontMatter-cdn.js"></script>
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ To use the `FrontMatter` class, include the following scripts in your HTML file:
   <meta charset="UTF-8">
   <title>Markdown Parser</title>
   <script src="https://cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/ksdeshappriya/FrontMatter-Plugin/frontMatter-plugin.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/ksdeshappriya/FrontMatter-Plugin/frontMatter-cdn.js"></script>
 </head>
 <body>
   <script>
