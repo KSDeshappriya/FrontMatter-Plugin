@@ -1,12 +1,12 @@
-# MarkdownParser Documentation
+# FrontMatter-Plugin Documentation
 
 ## Overview
 
-The `MarkdownParser` class provides a convenient way to parse markdown content with front matter using the `markdown-it` library. This class extracts metadata defined in the front matter section and renders the markdown body, making it easy to work with structured markdown content.
+The `FrontMatter` class provides a convenient way to parse markdown content with front matter using the `markdown-it` library. This class extracts metadata defined in the front matter section and renders the markdown body, making it easy to work with structured markdown content.
 
 ## Installation
 
-To use the `MarkdownParser` class, include the following scripts in your HTML file:
+To use the `FrontMatter` class, include the following scripts in your HTML file:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js"></script>
@@ -24,12 +24,12 @@ To use the `MarkdownParser` class, include the following scripts in your HTML fi
   <meta charset="UTF-8">
   <title>Markdown Parser</title>
   <script src="https://cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js"></script>
-  <script src="https://example.com/js/markdown-parser.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/ksdeshappriya/FrontMatter-Plugin/frontMatter-plugin.js"></script>
 </head>
 <body>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      const parser = new MarkdownParser();
+      const parser = new FrontMatter();
       const src = `---
 title: Hello World
 author: Jane Doe
@@ -51,15 +51,15 @@ This is some text.
 
 ## Usage Functions
 
-### MarkdownParser
+### FrontMatter-Plugin
 
 #### Constructor
 
 ```javascript
-new MarkdownParser()
+new FrontMatter()
 ```
 
-Creates a new instance of the `MarkdownParser` class.
+Creates a new instance of the `FrontMatter` class.
 
 #### getOutputAsJson
 
@@ -68,8 +68,6 @@ getOutputAsJson(markdownContent)
 ```
 
 Gets the rendered output as a JSON string.
-
-
 
 - **Parameters:**
   - `markdownContent` (string): The markdown content as a string.

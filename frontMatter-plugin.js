@@ -127,7 +127,7 @@
 
   global.markdownitFrontMatterPlugin = frontMatterPlugin;
 
-  class MarkdownParser {
+  class FrontMatter {
     constructor() {
       this.md = new markdownit().use(global.markdownitFrontMatterPlugin, this.handleFrontMatter.bind(this));
       this.frontMatter = {};
@@ -172,6 +172,6 @@
     }
   }
 
-  global.MarkdownParser = MarkdownParser;
+  global.FrontMatter = FrontMatter;
 
 }(this));

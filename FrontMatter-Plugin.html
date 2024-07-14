@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Markdown-It Front Matter Plugin</title>
   <script src="https://cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js"></script>
-  <script src="frontMatter-plugin.js"></script>
+  <script src="http://cdn.jsdelivr.net/gh/ksdeshappriya/FrontMatter-Plugin/frontMatter-plugin.js"></script>
 </head>
 
 <body>
@@ -33,7 +33,7 @@ This is some text.
   <script>
     // Example usage:
     document.addEventListener("DOMContentLoaded", function () {
-      const parser = new MarkdownParser();
+      const parser = new FrontMatter();
       const src = `---
 title: TITLE
 date: 2024-07-14 12:00:00 +0000
